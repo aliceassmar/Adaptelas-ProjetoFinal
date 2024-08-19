@@ -1,0 +1,1 @@
+Repository created for the final project of a front-end course.
