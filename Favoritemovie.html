@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Cinema</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="Favoritemovie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header> 
+        <h1> MEU FILME FAVORITO </h1>
+        <ul> 
+            <li>
+                <a href="./index.html" class="link-pagina" >Página Principal</a>
+            </li> 
+        </ul>
+    </header>
+    <main> 
+        <div class="div-informacoes">
+            <h2 id="nome">DIVERTIDAMENTE 2</h2>
+            <div>
+                <h2> Última vez que assisti</h2>
+                <p id="data"> 19/08/2024 </p>
+            </div>
+            <div> 
+                <h2>DESCRIÇÃO</h2>
+                <p id="descricao">
+                    Divertidamente 2 marca a sequência da famosa história de Riley (Kaitlyn Dias). Com um salto temporal, a garota agora se encontra mais velha, com 13 anos de idade, passando pela tão temida pré-adolescência. Junto com o amadurecimento, a sala de controle mental da jovem também está passando por uma demolição para dar lugar a algo totalmente inesperado: novas emoções.
+                </p>
+            </div>
+        </div>
+        <div class="div-personagens"> 
+            <h2>PERSONAGENS</h2>
+            <div class="cards"> 
+                <div class="card">
+                    <h2 id="personagem-um"> Inveja</h2>
+                    <img src="./imagens/personagem-1.jpg" alt="personagem 1" id="imagem-p1"> 
+                </div>
+                <div class="card">
+                    <h2 id="personagem-dois"> Ansiedade</h2>
+                    <img src="./imagens/personagem-2.jpg" alt="personagem 2" id="imagem-p2"> 
+                </div>
+            </div>
+        </div>
+        <button id="abrir-modal">Editar Filme</button>
+    </main>
+
+    <div class="div-modal escondida" id="modal">
+        <div>
+            <h2> Adicionar Filme</h2>
+            <form action="">
+                <label for="novo-nome">Nome</label>
+                <input type="text" placeholder="Nome do filme" id="novo-nome">
+                <label for="nova-data">Data</label>
+                <input type="date" placeholder="data em que assisti" id="nova-data">
+                <label for="nova-descrição">descrição</label>
+                <input type="text" placeholder="Descrição do filme" id="nova-descrição">
+                
+                <label for="novo-p1">Nome Personagem 1</label>
+                <input type="text" placeholder="Nome do Personagem um" id="novo-p1">
+                <label for="nova-imagem-p1">Imagem do Personagem 1</label>
+                <input type="file" value="" placeholder="Imagem do Personagem um" id="nova-imagem-p1" class="input-arquivo">
+
+                <label for="novo-p2">Nome Personagem 2</label>
+                <input type="text" placeholder="Nome do Personagem dois" id="novo-p2">
+                <label for="nova-imagem-p2">Imagem do Personagem 2</label>
+                <input type="file" value="" placeholder="Imagem do Personagem dois" id="nova-imagem-p2" class="input-arquivo">
+
+                <button id="salvar">Salvar</button>
+            </form>
+        </div>
+    </div> 
+   
+    <footer>
+        <p> Desenvolvido por <b> Adapti</b> com <i class="fa fa-solid fa-heart"></i></p>
+    </footer>
+</body>
+</html>
